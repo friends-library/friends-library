@@ -47,3 +47,28 @@
     column-width: 10vw;
   }
 }
+
+.DocBlock .Btn span {
+  position: relative;
+}
+
+.DocBlock .Btn:nth-of-type(3) span::after,
+.DocBlock .Btn:first-of-type span::after {
+  content: 'FREE';
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 60%;
+  padding: 2px 5px;
+  border-radius: 500px;
+  position: absolute;
+  height: 15px;
+  top: -7px;
+  right: -35px;
+  line-height: 1.2em;
+}
+
+.DocBlock:lang(es) .Btn:nth-of-type(3) span::after,
+.DocBlock:lang(es) .Btn:first-of-type span::after {
+  content: 'GRATIS';
+  right: -45px;
+  background: rgba(0, 0, 0, 0.45);
+}
